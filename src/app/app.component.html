@@ -7,10 +7,10 @@
         </mat-panel-title>
     </mat-expansion-panel-header>
     <mat-form-field>
-        <input [(ngModel)]="note.title" matInput type="text" matInput placeholder="Title" required>
+        <input [(ngModel)]="note.title" matInput type="text" matInput placeholder="Title" name="title">
     </mat-form-field>
     <mat-form-field>
-        <textarea [(ngModel)]="note.text" matInput type="text" matInput placeholder="Text" required></textarea>
+        <textarea [(ngModel)]="note.text" matInput type="text" matInput placeholder="Text" name="text"></textarea>
     </mat-form-field>
     <button mat-button (click)="addNote1()">Done</button>
 </mat-expansion-panel>
